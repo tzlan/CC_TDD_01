@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 public class Dictionary {
@@ -5,9 +7,11 @@ public class Dictionary {
     private String name;
     private String translate1;
     private String translate2;
+    Map<String, String> translations;
 
     public Dictionary(String name) {
         this.name = name;
+        this.translations = new HashMap<>();
     }
 
     String getName() {
