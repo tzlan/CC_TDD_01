@@ -14,7 +14,7 @@ public class DictionaryTest {
 
         @BeforeEach
         public void initialize () {
-            dict = new Dictionary();
+            dict = new Dictionary("Example");
         }
 
         @Test

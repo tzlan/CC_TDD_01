@@ -6,11 +6,9 @@ public class Dictionary {
         this.name = "Example";
     }
 
-    public Dictionary() {
-        this.name = "Example";
-    }
 
-    public String getName() {
+
+    String getName() {
         return this.name;
     }
 
