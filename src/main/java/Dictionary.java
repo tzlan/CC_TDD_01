@@ -7,6 +7,7 @@ public class Dictionary {
     private String name;
     private String translate1;
     private String translate2;
+
     Map<String, String> translations;
 
     public Dictionary(String name) {
@@ -23,28 +24,27 @@ public class Dictionary {
     }
 
 
-    public void addTranslation(String t1, String t2) {
-        translate1 = t1;
-        translate2 = t2;
-    }
+
 
 
     public String getTranslation(String t) {
-        if(Objects.equals(this.translate1, t))return this.translate2;
-        if(Objects.equals(this.translate1, t))return this.translate1;
+        if(translations.get(t)=="")
+            return "Erreur de traduction ";
 
-        return "against"; //FAKE IT
+        else
+        return translations.get(t);
+
+
 
 
     }
-    public String getTranslationbis(String t) {
-
-        if(Objects.equals(this.translate1, t))return this.translate2;
-        if(Objects.equals(this.translate1, t))return this.translate1;
-
-        return "contre"; //FAKE IT
 
 
+
+
+    public void addTranslation(String trans1, String trans2) {
+        translations.put(trans1,trans2);
+        translations.put(trans2,trans1);
     }
 
 
