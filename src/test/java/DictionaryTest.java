@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.*;
 
@@ -14,11 +15,20 @@ public class DictionaryTest {
 
 
 
-    @Test public void testDictionaryName() {
+
+
+
+    private Dictionary dict;
+
+    @Test
+    public void testDictionaryName() {
+        dict = new Dictionary();
         assertThat(dict.getName(), equalTo("Example"));
     }
 
-    
+
+
+
 
 
 }
