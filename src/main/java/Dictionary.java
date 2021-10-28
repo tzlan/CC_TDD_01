@@ -29,8 +29,10 @@ public class Dictionary {
         if(Objects.equals(this.translate1, t))return this.translate2;
         if(Objects.equals(this.translate1, t))return this.translate1;
 
-        return "Erreur traduction ";
+        return "against"; //FAKE IT
 
 
     }
+
+
 }
