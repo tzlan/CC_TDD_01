@@ -20,8 +20,9 @@ public class Dictionary {
     }
 
     public boolean isEmpty() {
-        return Objects.equals(this.name, "");
-    }
+
+        return translations.size() == 0 && Objects.equals(this.name, "")  ;
+        }
 
 
 

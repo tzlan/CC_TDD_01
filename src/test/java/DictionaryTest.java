@@ -14,18 +14,18 @@ public class DictionaryTest {
 
         @BeforeEach
         public void initialize () {
-            dict = new Dictionary("Example");
+            dict = new Dictionary("");
 
         }
 
         @Test
         public void testDictionaryName() {
-            assertThat(dict.getName(), equalTo("Example"));
+            assertThat(dict.getName(), equalTo(""));
         }
 
         @Test
         public void testEm(){
-            assertThat(dict.isEmpty(), equalTo(false));
+            assertThat(dict.isEmpty(), equalTo(true));
         }
 
         @Test public void testOneTranslation() {
