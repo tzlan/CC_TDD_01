@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.*;
 
@@ -9,7 +10,15 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class DictionaryTest {
 
+
+
+
+
     @Test public void testDictionaryName() {
         assertThat(dict.getName(), equalTo("Example"));
     }
+
+    
+
+
 }
