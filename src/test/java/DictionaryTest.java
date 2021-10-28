@@ -14,7 +14,7 @@ public class DictionaryTest {
 
         @BeforeEach
         public void initialize () {
-            dict = new Dictionary("");
+            dict = new Dictionary("Example");
 
         }
 
@@ -25,7 +25,7 @@ public class DictionaryTest {
 
         @Test
         public void testEm(){
-            assertThat(dict.isEmpty(), equalTo(true));
+            assertThat(dict.isEmpty(), equalTo(false));
         }
 
         @Test public void testOneTranslation() {
