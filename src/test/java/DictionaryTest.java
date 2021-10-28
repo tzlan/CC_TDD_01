@@ -3,6 +3,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -10,6 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class DictionaryTest {
 
     private Dictionary dict;
+    private List<String> lists;
 
 
         @BeforeEach
@@ -34,10 +37,28 @@ public class DictionaryTest {
 
         }
 
-        @Test public void testOneBisTranslation() {
-            dict.addTranslation("against", "contre");
-            assertThat(dict.getTranslation("against"), equalTo("contre"));
+        @Test public void testaddTranslationMultiples() {
+
+
+            dict.addTranslationMultiples("pour", List.of("for","to","towards"));
+            dict.addTranslationMultiples("depuis", List.of("since"));
+            assertThat(dict.getTranslationMultiple("pour"), equalTo(List.of("for","to","towards")));
+            assertThat(dict.getTranslationMultiple("depuis"), equalTo(List.of("since")));
+
         }
+
+   /* @Test
+    public void testOneTranslationbis() {
+        lists.add("hello");
+        lists.add("word");
+        dict.addTranslationMultiples("my", lists);
+        assertThat(dict.getTranslationMultiple("contre"), equalTo(lists));
+    }*/
+
+
+
+
+
 
 
 }
