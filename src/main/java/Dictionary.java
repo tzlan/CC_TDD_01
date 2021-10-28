@@ -33,6 +33,15 @@ public class Dictionary {
 
 
     }
+    public String getTranslationbis(String t) {
+
+        if(Objects.equals(this.translate1, t))return this.translate2;
+        if(Objects.equals(this.translate1, t))return this.translate1;
+
+        return "contre"; //FAKE IT
+
+
+    }
 
 
 }
