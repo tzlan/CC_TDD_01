@@ -6,12 +6,13 @@ public class Dictionary {
         this.name = "Example";
     }
 
-
-
     String getName() {
         return this.name;
     }
 
+    public boolean isEmpty() {
+        return true;
+    }
 
 
 }

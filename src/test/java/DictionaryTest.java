@@ -23,6 +23,11 @@ public class DictionaryTest {
         }
 
 
+        @Test
+        public void testEm(){
+
+            assertThat(dict.isEmpty(), equalTo(true));
+        }
 
 
 
