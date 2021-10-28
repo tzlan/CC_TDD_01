@@ -68,3 +68,11 @@ testlogger {
     showFailedStandardStreams true
     logLevel 'lifecycle'
 }
+
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
