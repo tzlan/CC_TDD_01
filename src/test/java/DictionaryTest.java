@@ -14,7 +14,8 @@ public class DictionaryTest {
 
         @BeforeEach
         public void initialize () {
-            dict = new Dictionary("Example");
+            dict = new Dictionary("");
+
         }
 
         @Test
@@ -22,14 +23,10 @@ public class DictionaryTest {
             assertThat(dict.getName(), equalTo("Example"));
         }
 
-
         @Test
         public void testEm(){
-
             assertThat(dict.isEmpty(), equalTo(true));
         }
-
-
 
 
 }

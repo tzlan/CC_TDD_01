@@ -1,9 +1,11 @@
+import java.util.Objects;
+
 public class Dictionary {
 
     private String name;
 
     public Dictionary(String name) {
-        this.name = "Example";
+        this.name = name;
     }
 
     String getName() {
@@ -11,7 +13,8 @@ public class Dictionary {
     }
 
     public boolean isEmpty() {
-        return true;
+        return Objects.equals(this.name, "");
+
     }
 
 
